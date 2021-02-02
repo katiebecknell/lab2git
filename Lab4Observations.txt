@@ -1,0 +1,7 @@
+Step 1: I downloaded the threadHello.c program from camino and compiled it and ran it several times. When running the threadHello program, it prints out "hello from thread # " with the number of the thread that is saying hello. It also prints "thread # returned" with the thread number that is being returned. When you run it multiple times, the "hello from thread #" changes each time with different numbers being printed. However, the "thread # returned" is the same each time and prints the thread number in order from 0 to 19. I turned on a show on Netflix and I saw that the print lines of "hello from thread #" and the "thread # returned" were more interchanged (the returned lines weren't all one after the other). The parameter is per-thread because the compiler stores the local variable on the stack of each thread so it is not shared data. The local variable i in the main function is shared data stored in the address space of the process. 
+
+Step 2: I deleted the second for loop in the initial program and compiled and ran it. Now the possible outcomes are only the "hello from thread #" print statements and then "main thread done". But when rerunning the program, the output is not the same each time - the numbers are still out of order and some numbers are repeated while other numbers don't even appear. 
+
+Step 3: I wrote a program that uses threads to perform matrix multiplication. I chose to multiply two 5x5 matrices but other sized matrices can be used if the user changes the global variables of M, N, and L.
+ 
+
